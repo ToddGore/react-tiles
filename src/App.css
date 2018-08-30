@@ -1,0 +1,117 @@
+
+/* =========================================
+    Default Theme
+    ----------------------------------------
+    Fonts: Open Sans
+    ----------------------------------------
+    Colors:
+        Red:           RGB(223, 70, 97)
+        Blue:          RGB(0, 95, 131)
+        Green:         RGB(107, 165, 57)
+        Dark Grey:     RGB(51, 51, 51)
+        Light Gray:    RGB(208, 211, 212) 
+============================================ */
+
+
+/* =========================================
+                Html, Body
+============================================ */
+
+
+ /* Assumption: spec.jpg is 72 DPI so 1pt = 1px? */
+
+ * {
+  /* base */
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+}
+
+h1 {
+  /* Heading */
+  font-size: 43px;
+  margin-top: 0;
+}
+
+h2 {
+  /* Sub-heading */
+  font-size: 32px;
+}
+
+h3 {
+  /* tile-heading */
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+p {
+  max-width: 780px;
+}
+
+strong { 
+  font-weight: bold;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  margin-top: 0;
+  padding: 0; 
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-areas: "yourarea"
+                       "news"
+                       "inspirational";
+}
+
+.card {
+  margin: 20px 0;
+  height: 480px;
+  width: 300px;
+  float: left;
+}
+.card:nth-child(even) {
+margin-left: 30px;
+margin-right: 30px;
+}
+
+.card img{
+  border: 1px solid RGB(51, 51, 51);
+  width: 300px;
+  height: 140px;
+}
+
+.app {
+  width:960px;
+}
+
+.your-area {
+  grid-area: yourarea;
+}
+
+.your-area hr {
+  border-top: 3px solid RGB(223, 70, 97);
+}
+
+.news {
+  grid-area: news;
+}
+
+.news hr {
+  border-top: 3px solid  RGB(0, 95, 131);
+}
+
+.inspirational {
+  grid-area: inspirational;
+}
+
+.inspirational hr {
+  border-top: 3px solid  RGB(107, 165, 57);
+}
